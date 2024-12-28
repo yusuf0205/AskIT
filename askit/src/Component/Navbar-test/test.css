@@ -1,18 +1,48 @@
-/* General Navbar Styling */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 10px;
+  padding: 15px 1.5%;
   background: #121212;
   color: #fff;
   font-family: Arial, sans-serif;
   position: relative;
   width: 100%;
-  padding: 15px 1.5%;
 }
 
-/* Center Search Bar */
+.nav-item {
+  position: relative;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.popup-box {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 10px;
+  background-color: white;
+  color: black;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+  width: max-content;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.nav-item.active .popup-box {
+  display: block;
+}
+
+.popup-box {
+  display: none;
+}
+
 .navbar-center {
   flex: 1;
   display: flex;
@@ -24,11 +54,27 @@
   display: flex;
   align-items: center;
   background: #242424;
-  border: 1px solid #00FF00;
+  border: 1px solid #00ff00;
   border-radius: 50px;
   overflow: hidden;
-  max-width: 600px; /* Adjust the width as needed */
+  max-width: 600px;
   width: 100%;
+}
+
+/* Left Section */
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo {
+  font-size: 36px;
+  font-weight: bold;
+  color: #fff;
+  font-weight: 700;
+  font-style: italic;
+  cursor: pointer;
 }
 
 /* Location Section */
@@ -37,11 +83,11 @@
   align-items: center;
   padding: 10px 15px;
   background: #242424;
-  color: #00FF00;
+  color: #00ff00;
   font-size: 14px;
   border-style: solid;
   border-width: 2px;
-  border-color: #00FF00;
+  border-color: #00ff00;
   border-radius: 25px;
   margin-left: 5px;
 }
@@ -91,7 +137,7 @@
   align-items: center;
   width: 40px;
   height: 40px;
-  background: #00FF00;
+  background: #00ff00;
   border: none;
   border-radius: 50%;
   cursor: pointer;
@@ -102,27 +148,11 @@
   height: 20px;
 }
 
-.search-but{
+.search-but {
   display: flex;
   align-items: center;
   width: 40px;
   border-radius: 10px;
-}
-
-/* Left Section */
-.navbar-left {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
-.logo {
-  font-size: 36px;
-  font-weight: bold;
-  color: #fff;
-  font-weight: 700;
-  font-style: italic;
-  cursor: pointer;
 }
 
 /* Right Section */
@@ -146,7 +176,7 @@
 }
 
 .sign-up {
-  background-color: #00FF00; /* Bright green background */
+  background-color: #00ff00; /* Bright green background */
   color: #000; /* Black text */
   border: none; /* No border */
   border-radius: 25px; /* Fully rounded corners */
@@ -155,7 +185,6 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
   transition: transform 0.2s, box-shadow 0.2s;
   font-weight: 700;
-  
 }
 
 .sign-up:hover {
@@ -167,4 +196,3 @@
   transform: scale(0.95); /* Slightly smaller when clicked */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow on click */
 }
-
