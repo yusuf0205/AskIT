@@ -1,29 +1,29 @@
-.language-selector {
+.header-language-selector {
     font-family: Arial, sans-serif;
     color: #333;
     max-width: 300px;
     margin: 0 auto;
   }
   
-  .title {
+  .header-title {
     font-size: 1.2rem;
     font-weight: bold;
     margin-bottom: 5px;
   }
   
-  .subtitle {
+  .header-subtitle {
     font-size: 0.9rem;
     color: #666;
     margin-bottom: 15px;
   }
   
-  .label {
+  .header-label {
     font-size: 0.9rem;
     margin-bottom: 5px;
     display: block;
   }
   
-  .dropdown {
+  .header-dropdown {
     width: 100%;
     padding: 8px;
     font-size: 1rem;
@@ -35,7 +35,7 @@
     cursor: pointer;
   }
   
-  .dropdown:focus {
+  .header-dropdown:focus {
     border-color: #007bff;
     box-shadow: 0 0 3px rgba(0, 123, 255, 0.5);
   }

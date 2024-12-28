@@ -2,13 +2,13 @@ import React from 'react'
 import './support.css'
 const Support = () => {
   return (
-    <div className="user-help">
-      <h3 className="title">User Help</h3>
-      <ul className="list">
-        <li className="list-item">How to Videos</li>
-        <li className="list-item">Account settings</li>
-        <li className="list-item">FAQ</li>
-        <li className="list-item">Technical help</li>
+    <div className="header-user-help">
+      <h3 className="header-title">User Help</h3>
+      <ul className="header-list">
+        <li className="header-list-item">How to Videos</li>
+        <li className="header-list-item">Account settings</li>
+        <li className="header-list-item">FAQ</li>
+        <li className="header-list-item">Technical help</li>
       </ul>
     </div>
   )

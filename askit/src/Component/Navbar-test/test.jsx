@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./test.css";
-import searchIcon from "../../Assets/search-b.png";
-import locationIcon from "../../Assets/search-w.png";
+import { IoSearch } from "react-icons/io5";
+import { MdLocationPin } from "react-icons/md";
 import { IoIosNotifications } from "react-icons/io";
 import { AiOutlineGlobal } from "react-icons/ai";
 import { CiCirclePlus } from "react-icons/ci";
@@ -22,46 +22,46 @@ const NavbarWithPopup = () => {
   };
 
   return (
-    <div className="navbar">
-      <div className="navbar-left">
-        <h1 className="logo">Ask IT</h1>
+    <div className="header-navbar">
+      <div className="header-navbar-left">
+        <h1 className="header-logo">Ask IT</h1>
       </div>
 
-      <div className="navbar-center">
-        <div className="search-wrapper">
-          <div className="locat">
-            <div className="location">
-              <img src={locationIcon} alt="Location" />
+      <div className="header-navbar-center">
+        <div className="header-search-wrapper">
+          <div className="header-locat">
+            <div className="header-location">
+            <MdLocationPin />
               <span>Puducherry</span>
             </div>
           </div>
-          <div className="search-box">
+          <div className="header-search-box">
             <input type="text" placeholder="Search" />
-            <div className="search-but">
-              <button className="search-button">
-                <img src={searchIcon} alt="Search" />
+            <div className="header-search-but">
+              <button className="header-search-button">
+              <IoSearch />
               </button>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="navbar-right">
+      <div className="header-navbar-right">
         <div
-          className={`nav-item ${activeSegment === "support" ? "active" : ""}`}
+          className={`header-nav-item ${activeSegment === "support" ? "active" : ""}`}
         >
           <a onClick={() => handleSegmentChange("support")} href="#support">
             Support
           </a>
           {activeSegment === "support" && (
-            <div className="popup-box">
+            <div className="header-popup-box">
               <Support />
             </div>
           )}
         </div>
 
         <div
-          className={`nav-item ${
+          className={`header-nav-item ${
             activeSegment === "notifications" ? "active" : ""
           }`}
         >
@@ -73,39 +73,39 @@ const NavbarWithPopup = () => {
             Notification
           </a>
           {activeSegment === "notifications" && (
-            <div className="popup-box">
+            <div className="header-popup-box">
               <Notification />
             </div>
           )}
         </div>
 
         <div
-          className={`nav-item ${activeSegment === "language" ? "active" : ""}`}
+          className={`header-nav-item ${activeSegment === "language" ? "active" : ""}`}
         >
           <a onClick={() => handleSegmentChange("language")} href="#language">
             <AiOutlineGlobal />
             English
           </a>{" "}
           {activeSegment === "language" && (
-            <div className="popup-box">
+            <div className="header-popup-box">
               <Language />
             </div>
           )}
         </div>
 
         <div
-          className={`nav-item ${activeSegment === "signin" ? "active" : ""}`}
+          className={`header-nav-item ${activeSegment === "signin" ? "active" : ""}`}
         >
           <a onClick={() => handleSegmentChange("signin")} href="#signin">
             <CiCirclePlus />
             Sign in
           </a>
           {activeSegment === "signin" && (
-            <div className="popup-box">Sign in Info Here</div>
+            <div className="header-popup-box">Sign in Info Here</div>
           )}
         </div>
 
-        <button className="sign-up">Sign up</button>
+        <button className="header-sign-up">Sign up</button>
       </div>
     </div>
   );

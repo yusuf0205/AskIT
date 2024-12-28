@@ -4,13 +4,13 @@ import './Language.css'
 
 const Language = () => {
   return (
-    <div className="language-selector">
-      <h3 className="title">Set language</h3>
-      <p className="subtitle">Select your preferred language</p>
-      <label htmlFor="language" className="label">
+    <div className="header-language-selector">
+      <h3 className="header-title">Set language</h3>
+      <p className="header-subtitle">Select your preferred language</p>
+      <label htmlFor="language" className="header-label">
         Language
       </label>
-      <select id="language" className="dropdown">
+      <select id="language" className="header-dropdown">
         <option value="english">English</option>
         <option value="spanish">Spanish</option>
         <option value="french">French</option>
@@ -53,7 +53,6 @@ const Language = () => {
         <option value="gujarati">Gujarati</option>
         <option value="amharic">Amharic</option>
         <option value="somali">Somali</option>
-        {/* Add additional languages as needed */}
       </select>
     </div>
   )

@@ -1,21 +1,21 @@
-.user-help {
+.header-user-help {
     font-family: Arial, sans-serif;
     color: #333;
   }
   
-  .title {
+  .header-title {
     font-size: 1.2rem;
     font-weight: bold;
     margin-bottom: 10px;
   }
   
-  .list {
+  .header-list {
     list-style-type: none;
     padding: 0;
     margin: 0;
   }
   
-  .list-item {
+  .header-list-item {
     font-size: 0.95rem;
     color: #666;
     margin-bottom: 5px;
