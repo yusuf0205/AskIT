@@ -8,6 +8,8 @@
     color: #fff;
     font-family: Arial, sans-serif;
     position: relative;
+    width: 100%;
+    padding: 15px 1.5%;
   }
   
   /* Center Search Bar */
@@ -53,13 +55,12 @@
   /* Search Box Section */
 
   .search-box {
-
     display: flex;
-
-    padding: 5px;
-    background: transparent;
-
-
+    background: #242424, transparent;
+    text-align: center;
+    padding: 5px 20px;
+    border-radius: 50px;
+    gap: 200px;
   }
   
   .search-box input {
@@ -69,6 +70,12 @@
     color: #fff;
     font-size: 16px;
     width: 100%;
+    padding: 6px;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    font-size: 18px;
+    max-width: 200px;
   }
   
   .search-box input::placeholder {
@@ -112,6 +119,7 @@
     color: #fff;
     font-weight: 700;
     font-style: italic;
+    cursor: pointer;
   }
   
   /* Right Section */
@@ -135,17 +143,25 @@
   }
   
   .sign-up {
-    background-color: #00FF00;
-    color: #000;
-    border: none;
-    padding: 8px 16px;
-    border-radius: 20px;
-    font-size: 14px;
-    font-weight: bold;
-    cursor: pointer;
+    background-color: #00FF00; /* Bright green background */
+    color: #000; /* Black text */
+    border: none; /* No border */
+    border-radius: 25px; /* Fully rounded corners */
+    padding: 10px 20px; /* Adjust padding for size */
+    cursor: pointer; /* Pointer cursor on hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    transition: transform 0.2s, box-shadow 0.2s;
+    font-weight: 700;
+    
   }
   
   .sign-up:hover {
-    background-color: #32CD32;
+    transform: scale(1.05); /* Slightly larger on hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
+  }
+
+  .signup:active {
+    transform: scale(0.95); /* Slightly smaller when clicked */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow on click */
   }
   
