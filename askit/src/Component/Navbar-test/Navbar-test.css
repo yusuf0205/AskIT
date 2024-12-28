@@ -1,0 +1,151 @@
+/* General Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+    background: #121212;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    position: relative;
+  }
+  
+  /* Center Search Bar */
+  .navbar-center {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .search-wrapper {
+    display: flex;
+    align-items: center;
+    background: #242424;
+    border: 1px solid #00FF00;
+    border-radius: 50px;
+    overflow: hidden;
+    max-width: 600px; /* Adjust the width as needed */
+    width: 100%;
+  }
+  
+  /* Location Section */
+  .location {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    background: #242424;
+    color: #00FF00;
+    font-size: 14px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #00FF00;
+    border-radius: 25px;
+    margin-left: 5px;
+  }
+  
+  .location img {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+  }
+  
+  /* Search Box Section */
+
+  .search-box {
+
+    display: flex;
+
+    padding: 5px;
+    background: transparent;
+
+
+  }
+  
+  .search-box input {
+    border: none;
+    outline: none;
+    background: white;
+    color: #fff;
+    font-size: 16px;
+    width: 100%;
+  }
+  
+  .search-box input::placeholder {
+    color: #888;
+  }
+  
+  .search-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: #00FF00;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .search-button img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .search-but{
+    display: flex;
+    align-items: center;
+    width: 40px;
+    border-radius: 10px;
+  }
+  
+  /* Left Section */
+  .navbar-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .logo {
+    font-size: 36px;
+    font-weight: bold;
+    color: #fff;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  /* Right Section */
+  .navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .navbar-right a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .navbar-right a img {
+    width: 20px;
+  }
+  
+  .sign-up {
+    background-color: #00FF00;
+    color: #000;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .sign-up:hover {
+    background-color: #32CD32;
+  }
+  
