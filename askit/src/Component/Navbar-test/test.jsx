@@ -2,9 +2,10 @@ import React, { useState } from "react";
 import "./test.css";
 import searchIcon from "../../Assets/search-b.png";
 import locationIcon from "../../Assets/search-w.png";
-import notificationIcon from "../../Assets/search-w.png";
-import globeIcon from "../../Assets/search-w.png";
-import userIcon from "../../Assets/search-w.png";
+import { IoIosNotifications } from "react-icons/io";
+import { AiOutlineGlobal } from "react-icons/ai";
+import { CiCirclePlus } from "react-icons/ci";
+
 import Support from "./Navtopage/support";
 import Notification from "./Navtopage/Notification";
 import Language from "./Navtopage/Language";
@@ -49,7 +50,9 @@ const NavbarWithPopup = () => {
         <div
           className={`nav-item ${activeSegment === "support" ? "active" : ""}`}
         >
-          <a onClick={() => handleSegmentChange("support")} href="#support">Support</a>
+          <a onClick={() => handleSegmentChange("support")} href="#support">
+            Support
+          </a>
           {activeSegment === "support" && (
             <div className="popup-box">
               <Support />
@@ -62,8 +65,11 @@ const NavbarWithPopup = () => {
             activeSegment === "notifications" ? "active" : ""
           }`}
         >
-          <a onClick={() => handleSegmentChange("notifications")} href="#notifications">
-            <img src={notificationIcon} alt="Notifications" />
+          <a
+            onClick={() => handleSegmentChange("notifications")}
+            href="#notifications"
+          >
+            <IoIosNotifications />
             Notification
           </a>
           {activeSegment === "notifications" && (
@@ -77,21 +83,21 @@ const NavbarWithPopup = () => {
           className={`nav-item ${activeSegment === "language" ? "active" : ""}`}
         >
           <a onClick={() => handleSegmentChange("language")} href="#language">
-            <img src={globeIcon} alt="Language" />
+            <AiOutlineGlobal />
             English
-          </a> {activeSegment === "language" && (
-          <div className="popup-box">
-            <Language />
-          </div>
-        )}
+          </a>{" "}
+          {activeSegment === "language" && (
+            <div className="popup-box">
+              <Language />
+            </div>
+          )}
         </div>
-       
 
         <div
           className={`nav-item ${activeSegment === "signin" ? "active" : ""}`}
         >
           <a onClick={() => handleSegmentChange("signin")} href="#signin">
-            <img src={userIcon} alt="Sign in" />
+            <CiCirclePlus />
             Sign in
           </a>
           {activeSegment === "signin" && (
