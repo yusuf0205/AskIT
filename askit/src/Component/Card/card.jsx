@@ -70,13 +70,14 @@ const Card = ({ data }) => {
           <span className="card-price-amount">{data.price}</span>
         </div>
         <button className="card-call-button">
-          <i className="card-fas fa-phone-alt"></i> Call
+          <i className="fas fa-phone-alt"></i> Call
         </button>
       </div>
 
       <div className="card-card-rating">
         <strong>{data.rating}</strong> ⭐<span>({data.reviews} Reviews)</span>
       </div>
+      <hr />
       <p className="card-posted-date">Posted on: {data.postedDate}</p>
     </div>
   );
