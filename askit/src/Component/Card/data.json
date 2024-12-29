@@ -4,7 +4,7 @@
     "experience": "5",
     "skills": "5",
     "location": "Gandhipuram, R.S. Puram, Saibaba Colony",
-    "availableDays": ["Sun", "Wed", "Fri", "Sat"],
+    "availableDays": ["Sunday", "Wednesday", "Friday", "Saturday"],
     "rating": "4.8",
     "reviews": "10000",
     "price": "₹1500/Hour",

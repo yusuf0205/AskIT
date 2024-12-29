@@ -3,14 +3,14 @@ import "./card.css";
 import { MdVerified } from "react-icons/md";
 
 const Card = ({ data }) => {
-  const carddaysoftheWeek = [
-    { full: "Sun", short: "S" },
-    { full: "Mon", short: "M" },
-    { full: "Tue", short: "T" },
-    { full: "Wed", short: "W" },
-    { full: "Thu", short: "T" },
-    { full: "Fri", short: "F" },
-    { full: "Sat", short: "S" },
+  const daysoftheWeek = [
+    { full: "Sunday", short: "S" },
+    { full: "Monday", short: "M" },
+    { full: "Tuesday", short: "T" },
+    { full: "Wednesday", short: "W" },
+    { full: "Thursaday", short: "T" },
+    { full: "Friday", short: "F" },
+    { full: "Saturday", short: "S" },
   ];
 
   return (
@@ -50,13 +50,13 @@ const Card = ({ data }) => {
           <strong>Available on:</strong>
         </p>
         <div className="card-availability">
-          {carddaysoftheWeek.map((day, index) => (
+          {daysoftheWeek.map((day, index) => (
             <span
               key={index}
               className={
                 data.availableDays.includes(day.full)
-                  ? "available-day"
-                  : "unavailable-day"
+                  ? "card-available-day"
+                  : "card-unavailable-day"
               }
             >
               {day.short}
