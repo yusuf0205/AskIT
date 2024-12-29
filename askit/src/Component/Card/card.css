@@ -1,7 +1,7 @@
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
 
 
-.card {
+.card-card {
     width: 350px;
     border: 1px solid #e0e0e0;
     border-radius: 12px;
@@ -15,91 +15,90 @@
   }
   
   
-  .card-header {
+  .card-card-header {
     display: flex;
     justify-content: space-between;
     padding: 0 10px;
     margin-bottom: 10px;
   }
   
-  .icons i {
+  .card-icons i {
     margin: 0 8px;
     color: #4caf50;
     cursor: pointer;
     font-size: 18px;
   }
-  
-  .options {
+
+  .card-options {
     font-size: 20px;
     cursor: pointer;
     color: #aaa;
   }
+
+  .fa-ellipsis-h{
+    cursor: pointer;
+  }
   
-  
-  .card-profile {
+  .card-card-profile {
     text-align: center;
   }
   
-  .profile-image {
+  .card-profile-image {
     width: 90px;
     height: 90px;
     border-radius: 50%;
     border: 3px solid #4caf50;
   }
   
-  .name {
+  .card-name {
     font-size: 18px;
     font-weight: bold;
     margin: 10px 0;
   }
   
-  .verified {
-    color: #4caf50;
-    font-size: 14px;
-  }
   
-  .profession {
+  .card-profession {
     font-size: 14px;
     color: #757575;
   }
   
   
-  .card-details {
+  .card-card-details {
     padding: 10px 0;
     font-size: 14px;
     color: #424242;
   }
   
-  .card-details p {
+  .card-card-details p {
     margin: 5px 0;
   }
   
   
-  .availability {
+  .card-availability {
     display: flex;
     gap: 5px;
     margin-top: 5px;
   }
   
-  .available-day {
+  .card-available-day {
     color: #4caf50; 
     font-weight: bold;
   }
   
-  .unavailable-day {
+  .card-unavailable-day {
     color: #9e9e9e; 
     font-weight: normal;
   }
   
   
-  .card-footer {
+  .card-card-footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 15px;
   }
   
-  .price {
+  .card-price {
     background-color: #e8f5e9;
     border-radius: 20px;
     padding: 5px 15px;
@@ -110,7 +109,7 @@
     align-items: center;
   }
   
-  .call-button {
+  .card-call-button {
     background-color: #4caf50;
     color: white;
     font-size: 14px;
@@ -122,23 +121,23 @@
     align-items: center;
   }
   
-  .call-button i {
+  .card-call-button i {
     margin-right: 5px;
   }
   
-  .call-button:hover {
+  .card-call-button:hover {
     background-color: #45a049;
   }
   
   
-  .card-rating {
+  .card-card-rating {
     font-size: 14px;
     color: #4caf50;
     text-align: center;
     margin: 10px 0;
   }
   
-  .posted-date {
+  .card-posted-date {
     font-size: 12px;
     color: #999;
     text-align: center;
