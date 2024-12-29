@@ -3,7 +3,15 @@ import "./card.css";
 import { MdVerified } from "react-icons/md";
 
 const Card = ({ data }) => {
-  const daysOfWeek = ["S", "M", "T", "W", "T", "F", "S"];
+  const daysoftheWeek = [
+    { full: "Sun", short: "S" },
+    { full: "Mon", short: "M" },
+    { full: "Tue", short: "T" },
+    { full: "Wed", short: "W" },
+    { full: "Thu", short: "T" },
+    { full: "Fri", short: "F" },
+    { full: "Sat", short: "S" },
+  ];
 
   return (
     <div className="card">
@@ -17,7 +25,11 @@ const Card = ({ data }) => {
       </div>
 
       <div className="card-profile">
-        <img src={data.profilePicture} alt={data.name} className="profile-image" />
+        <img
+          src={data.profilePicture}
+          alt={data.name}
+          className="profile-image"
+        />
         <h2 className="name">
           {data.name} <MdVerified />
         </h2>
@@ -25,17 +37,29 @@ const Card = ({ data }) => {
       </div>
 
       <div className="card-details">
-        <p><strong>Experience:</strong> {data.experience} Years</p>
-        <p><strong>Skills:</strong> {data.skills} Years</p>
-        <p><strong>Location Covered:</strong> {data.location}</p>
-        <p><strong>Available on:</strong></p>
+        <p>
+          <strong>Experience:</strong> {data.experience} Years
+        </p>
+        <p>
+          <strong>Skills:</strong> {data.skills} Years
+        </p>
+        <p>
+          <strong>Location Covered:</strong> {data.location}
+        </p>
+        <p>
+          <strong>Available on:</strong>
+        </p>
         <div className="availability">
-          {daysOfWeek.map((day, index) => (
+          {daysoftheWeek.map((day, index) => (
             <span
               key={index}
-              className={data.availableDays.includes(day) ? "available-day" : "unavailable-day"}
+              className={
+                data.availableDays.includes(day.full)
+                  ? "available-day"
+                  : "unavailable-day"
+              }
             >
-              {day}
+              {day.short}
             </span>
           ))}
         </div>
@@ -51,8 +75,7 @@ const Card = ({ data }) => {
       </div>
 
       <div className="card-rating">
-        <strong>{data.rating}</strong> ⭐ 
-        <span>({data.reviews} Reviews)</span>
+        <strong>{data.rating}</strong> ⭐<span>({data.reviews} Reviews)</span>
       </div>
       <p className="posted-date">Posted on: {data.postedDate}</p>
     </div>
