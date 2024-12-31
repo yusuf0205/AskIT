@@ -164,8 +164,7 @@
   background: transparent;
 }
 
-.review-number,
-.star {
+.review-number{
   margin-left: 10px;
 }
 .posted {

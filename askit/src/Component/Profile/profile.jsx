@@ -9,8 +9,19 @@ import { FaStar } from "react-icons/fa";
 import { CiStar } from "react-icons/ci";
 import { IoIosPricetags } from "react-icons/io";
 
+const StarRating = ({ rating }) => {
+  return (
+    <div style={{ marginLeft: "10px" }}>
+      {Array.from({ length: 5 }, (_, index) => (
+        <span key={index}>{index < rating ? <FaStar /> : <CiStar />}</span>
+      ))}
+    </div>
+  );
+};
+
 const Profile = () => {
   const data = {
+    star: 1,
     name: "Kathir",
     about:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis vel asperiores numquam. Accusamus ad suscipit est culpa animi modi eos atque molestias fugiat libero, nihil minus et in rerum sequi aliquid dignissimos officiis doloribus quod accusantium explicabo vel eum odit ut. Molestias a porro dicta similique nostrum ipsa atque temporibus eaque vero ex. In ullam porro necessitatibus ut ipsum reprehenderit suscipit dolor vitae praesentium nam fugiat nesciunt, architecto quibusdam voluptate qui harum vero sit, molestiae consequatur, pariatur similique deserunt id cupiditate. Unde modi ipsam omnis maiores maxime sint assumenda distinctio suscipit inventore alias quas incidunt et, natus animi neque facere! Incidunt nisi deleniti inventore et officia tenetur voluptates eaque, blanditiis dicta quam amet, hic dignissimos quidem sunt. Unde, necessitatibus ratione dolorem voluptatibus commodi veritatis tempore eligendi tenetur? Magnam architecto a, iusto rerum tempore cumque nulla, illum dicta tempora ratione earum culpa reprehenderit, harum eum veritatis porro similique commodi et quos nobis. Quae cumque blanditiis consectetur repellat labore, maiores eligendi veniam nisi vitae esse officia sequi ipsa quod minus voluptates repellendus id. Unde nesciunt officia iure harum similique. ",
@@ -55,13 +66,7 @@ const Profile = () => {
               <div className="rating">{data.rating}</div>
               <div className="line"></div>
               <div className="based">
-                <div className="star">
-                  <FaStar />
-                  <FaStar />
-                  <FaStar />
-                  <FaStar />
-                  <CiStar />
-                </div>
+                <StarRating rating={data.star} />
                 <div className="review-number">
                   Based on {data.reviews} Reviews
                 </div>
