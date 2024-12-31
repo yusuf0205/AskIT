@@ -10,9 +10,13 @@ import { CiStar } from "react-icons/ci";
 const Profile = () => {
   const data = {
     name: "Kathir",
+    about:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis vel asperiores numquam. Accusamus ad suscipit est culpa animi modi eos atque molestias fugiat libero, nihil minus et in rerum sequi aliquid dignissimos officiis doloribus quod accusantium explicabo vel eum odit ut. Molestias a porro dicta similique nostrum ipsa atque temporibus eaque vero ex. In ullam porro necessitatibus ut ipsum reprehenderit suscipit dolor vitae praesentium nam fugiat nesciunt, architecto quibusdam voluptate qui harum vero sit, molestiae consequatur, pariatur similique deserunt id cupiditate. Unde modi ipsam omnis maiores maxime sint assumenda distinctio suscipit inventore alias quas incidunt et, natus animi neque facere! Incidunt nisi deleniti inventore et officia tenetur voluptates eaque, blanditiis dicta quam amet, hic dignissimos quidem sunt. Unde, necessitatibus ratione dolorem voluptatibus commodi veritatis tempore eligendi tenetur? Magnam architecto a, iusto rerum tempore cumque nulla, illum dicta tempora ratione earum culpa reprehenderit, harum eum veritatis porro similique commodi et quos nobis. Quae cumque blanditiis consectetur repellat labore, maiores eligendi veniam nisi vitae esse officia sequi ipsa quod minus voluptates repellendus id. Unde nesciunt officia iure harum similique. Perferendis nihil autem iste architecto tempora. Ratione ab voluptas recusandae quaerat rerum consequatur corporis velit. Ipsa, magnam quidem ducimus cum laudantium atque esse.',
     profession: "Carpenter",
-    experience: "5",
-    skills: "5",
+    experience: "5 years",
+    servicesoffered:
+      "Custom Furniture Design & Build Cabinet Installation & Repair Height Top 911.21px 547.58px 214.6px Interior Woodwork & Trim Left 426.5px Outdoor Decks & Pergolas Wooden Flooring & Staircases",
+    // skills: "5",
     location: "Gandhipuram, R.S. Puram, Saibaba Colony",
     availableDays: ["Sunday", "Wednesday", "Friday", "Saturday"],
     rating: "4.8",
@@ -20,7 +24,7 @@ const Profile = () => {
     price: "₹1500/Hour",
     postedDate: "12-12-2023",
     profilePicture:
-      "2wCEAAkGBxITEhMTExMVFhUXGRUYGRYYFxUVFxgZFxUXFhUXFRgYHSggGBolGxUXITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGxAQGy0mICUtLS8tLi0uLS0zLS0tKy4tLS8tLS0tLS0tLS0tLy0tLS0tLS0tLS0tLS0tLS0tLS0tLf",
+      "https://thumbs.dreamstime.com/b/default-avatar-profile-icon-vector-social-media-user-image-182145777.jpg",
   };
 
   return (
@@ -34,7 +38,7 @@ const Profile = () => {
             <BsThreeDots className="iconspe" />
           </div>
         </div>
-        <div className="content">
+        <div className="overall-content">
           <div className="overview">
             <div className="circle">
               <img src={data.profilePicture} alt="" />
@@ -56,12 +60,50 @@ const Profile = () => {
                   <FaStar />
                   <CiStar />
                 </div>
-                <div className="review-number">Based on {data.reviews} Reviews</div>
+                <div className="review-number">
+                  Based on {data.reviews} Reviews
+                </div>
               </div>
             </div>
-            <div className="posted"></div>
+            <div className="posted">Posted on {data.postedDate}</div>
           </div>
-          <div className="experience"></div>
+          <div className="experience">
+            <div className="content">
+              <div className="about">
+                <h3>About:</h3>
+                <p>{data.about}</p>
+              </div>
+              <br />
+              <div className="work-experience">
+                <h3>Experience: {data.experience}</h3>
+              </div>
+              <br />
+              <div className="special">
+                <div className="location">
+                  <h3>Location:</h3>
+                  <p>{data.location}</p>
+                </div>
+                <br />
+                <div className="servicesoffered">
+                  <h3>Services Offered:</h3>
+                  <p>{data.servicesoffered}</p>
+                </div>
+              </div>
+              <br />
+              <div className="working-hours">
+                  <h3>Available Days:</h3>
+                  <div className="box-plot">
+                    <div className="day">Sun</div>
+                    <div className="day">Mon</div>
+                    <div className="day">Tue</div>
+                    <div className="day">Wed</div>
+                    <div className="day">Thu</div>
+                    <div className="day">Fri</div>
+                    <div className="day">Sat</div>
+                  </div>
+                </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
