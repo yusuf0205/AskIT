@@ -1,15 +1,18 @@
 import React from 'react';
 import './App.css';
-import Card from './Component/Card/card';
-import data from './Component/Card/data.json'; 
-{/*import NavbarWithPopup from './Component/Navbar-test/test';*/}
+import Profile from './Component/Profile/profile';
+// import NavbarWithPopup from './Component/Navbar-test/test';
+// import Card from './Component/Card/card';
+// import data from './Component/Card/data.json';
+
 
 
 function App() {
   return (
     <div> 
-      {/*<NavbarWithPopup /> */}
-      <Card data={data} />
+      <Profile />
+      {/* <NavbarWithPopup /> */}
+      {/*<Card data={data} />*/}
     </div>
   );
 }
