@@ -224,3 +224,58 @@
   margin: 5px;
   border: 1px solid #000000;
 }
+
+.special2 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 885px;
+  height: 50px;
+}
+
+.call{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100px;
+  height: 45px;
+  background: black;
+  border-radius: 36px;
+  color: white;
+  border: #7ce605 solid 2px;
+  cursor: pointer;
+}
+
+.callsym{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #7CE605;
+}
+
+.price{
+  margin-left: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 140px;
+  height: 45px;
+  background: black;
+  border-radius: 36px;
+  color: white;
+  border: #7ce605 solid 2px;
+  cursor: pointer;
+}
+
+.pricesym{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #7CE605;
+}

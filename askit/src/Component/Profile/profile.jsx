@@ -1,17 +1,19 @@
 import React from "react";
 import "./profile.css";
 // import profile from "../../Assets/profile.jpg";
+import { FaPhone } from "react-icons/fa";
 import { IoMdArrowRoundBack } from "react-icons/io";
 import { BsThreeDots } from "react-icons/bs";
 import { MdVerified } from "react-icons/md";
 import { FaStar } from "react-icons/fa";
 import { CiStar } from "react-icons/ci";
+import { IoIosPricetags } from "react-icons/io";
 
 const Profile = () => {
   const data = {
     name: "Kathir",
     about:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis vel asperiores numquam. Accusamus ad suscipit est culpa animi modi eos atque molestias fugiat libero, nihil minus et in rerum sequi aliquid dignissimos officiis doloribus quod accusantium explicabo vel eum odit ut. Molestias a porro dicta similique nostrum ipsa atque temporibus eaque vero ex. In ullam porro necessitatibus ut ipsum reprehenderit suscipit dolor vitae praesentium nam fugiat nesciunt, architecto quibusdam voluptate qui harum vero sit, molestiae consequatur, pariatur similique deserunt id cupiditate. Unde modi ipsam omnis maiores maxime sint assumenda distinctio suscipit inventore alias quas incidunt et, natus animi neque facere! Incidunt nisi deleniti inventore et officia tenetur voluptates eaque, blanditiis dicta quam amet, hic dignissimos quidem sunt. Unde, necessitatibus ratione dolorem voluptatibus commodi veritatis tempore eligendi tenetur? Magnam architecto a, iusto rerum tempore cumque nulla, illum dicta tempora ratione earum culpa reprehenderit, harum eum veritatis porro similique commodi et quos nobis. Quae cumque blanditiis consectetur repellat labore, maiores eligendi veniam nisi vitae esse officia sequi ipsa quod minus voluptates repellendus id. Unde nesciunt officia iure harum similique. Perferendis nihil autem iste architecto tempora. Ratione ab voluptas recusandae quaerat rerum consequatur corporis velit. Ipsa, magnam quidem ducimus cum laudantium atque esse.',
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis vel asperiores numquam. Accusamus ad suscipit est culpa animi modi eos atque molestias fugiat libero, nihil minus et in rerum sequi aliquid dignissimos officiis doloribus quod accusantium explicabo vel eum odit ut. Molestias a porro dicta similique nostrum ipsa atque temporibus eaque vero ex. In ullam porro necessitatibus ut ipsum reprehenderit suscipit dolor vitae praesentium nam fugiat nesciunt, architecto quibusdam voluptate qui harum vero sit, molestiae consequatur, pariatur similique deserunt id cupiditate. Unde modi ipsam omnis maiores maxime sint assumenda distinctio suscipit inventore alias quas incidunt et, natus animi neque facere! Incidunt nisi deleniti inventore et officia tenetur voluptates eaque, blanditiis dicta quam amet, hic dignissimos quidem sunt. Unde, necessitatibus ratione dolorem voluptatibus commodi veritatis tempore eligendi tenetur? Magnam architecto a, iusto rerum tempore cumque nulla, illum dicta tempora ratione earum culpa reprehenderit, harum eum veritatis porro similique commodi et quos nobis. Quae cumque blanditiis consectetur repellat labore, maiores eligendi veniam nisi vitae esse officia sequi ipsa quod minus voluptates repellendus id. Unde nesciunt officia iure harum similique. ",
     profession: "Carpenter",
     experience: "5 years",
     servicesoffered:
@@ -91,17 +93,32 @@ const Profile = () => {
               </div>
               <br />
               <div className="working-hours">
-                  <h3>Available Days:</h3>
-                  <div className="box-plot">
-                    <div className="day">Sun</div>
-                    <div className="day">Mon</div>
-                    <div className="day">Tue</div>
-                    <div className="day">Wed</div>
-                    <div className="day">Thu</div>
-                    <div className="day">Fri</div>
-                    <div className="day">Sat</div>
-                  </div>
+                <h3>Available Days:</h3>
+                <div className="box-plot">
+                  <div className="day">Sun</div>
+                  <div className="day">Mon</div>
+                  <div className="day">Tue</div>
+                  <div className="day">Wed</div>
+                  <div className="day">Thu</div>
+                  <div className="day">Fri</div>
+                  <div className="day">Sat</div>
                 </div>
+              </div>
+              <br />
+              <div className="special2">
+                <div className="call">
+                  <div className="callsym">
+                    <FaPhone />
+                  </div>
+                  <p>Call</p>
+                </div>
+                <dic className="price">
+                  <div className="pricesym">
+                    <IoIosPricetags />
+                  </div>
+                  <p>{data.price}</p>
+                </dic>
+              </div>
             </div>
           </div>
         </div>
