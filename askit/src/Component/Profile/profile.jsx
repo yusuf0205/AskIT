@@ -95,13 +95,83 @@ const Profile = () => {
               <div className="working-hours">
                 <h3>Available Days:</h3>
                 <div className="box-plot">
-                  <div className="day">Sun</div>
-                  <div className="day">Mon</div>
-                  <div className="day">Tue</div>
-                  <div className="day">Wed</div>
-                  <div className="day">Thu</div>
-                  <div className="day">Fri</div>
-                  <div className="day">Sat</div>
+                  <div
+                    className={`day ${
+                      data.availableDays
+                        .map((d) => d.toLowerCase())
+                        .includes("sunday")
+                        ? "available"
+                        : ""
+                    }`}
+                  >
+                    Sun
+                  </div>
+                  <div
+                    className={`day ${
+                      data.availableDays
+                        .map((d) => d.toLowerCase())
+                        .includes("monday")
+                        ? "available"
+                        : ""
+                    }`}
+                  >
+                    Mon
+                  </div>
+                  <div
+                    className={`day ${
+                      data.availableDays
+                        .map((d) => d.toLowerCase())
+                        .includes("tuesday")
+                        ? "available"
+                        : ""
+                    }`}
+                  >
+                    Tue
+                  </div>
+                  <div
+                    className={`day ${
+                      data.availableDays
+                        .map((d) => d.toLowerCase())
+                        .includes("wednesday")
+                        ? "available"
+                        : ""
+                    }`}
+                  >
+                    Wed
+                  </div>
+                  <div
+                    className={`day ${
+                      data.availableDays
+                        .map((d) => d.toLowerCase())
+                        .includes("thursday")
+                        ? "available"
+                        : ""
+                    }`}
+                  >
+                    Thu
+                  </div>
+                  <div
+                    className={`day ${
+                      data.availableDays
+                        .map((d) => d.toLowerCase())
+                        .includes("friday")
+                        ? "available"
+                        : ""
+                    }`}
+                  >
+                    Fri
+                  </div>
+                  <div
+                    className={`day ${
+                      data.availableDays
+                        .map((d) => d.toLowerCase())
+                        .includes("saturday")
+                        ? "available"
+                        : ""
+                    }`}
+                  >
+                    Sat
+                  </div>
                 </div>
               </div>
               <br />
