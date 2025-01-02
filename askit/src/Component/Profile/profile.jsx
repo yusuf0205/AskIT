@@ -41,137 +41,137 @@ const Profile = () => {
   };
 
   return (
-    <div className="flex-box">
-      <div className="container">
-        <div className="header">
-          <div className="icons">
-            <IoMdArrowRoundBack className="icon" />
-            <IoMdArrowRoundBack className="icon" />
-            <IoMdArrowRoundBack className="icon" />
-            <BsThreeDots className="iconspe" />
+    <div className="service-profile-flex-box">
+      <div className="service-profile-container">
+        <div className="service-profile-header">
+          <div className="service-profile-icons">
+            <IoMdArrowRoundBack className="service-profile-icon" />
+            <IoMdArrowRoundBack className="service-profile-icon" />
+            <IoMdArrowRoundBack className="service-profile-icon" />
+            <BsThreeDots className="service-profile-iconspe" />
           </div>
         </div>
-        <div className="overall-content">
-          <div className="overview">
-            <div className="circle">
+        <div className="service-profile-overall-content">
+          <div className="service-profile-overview">
+            <div className="service-profile-circle">
               <img src={data.profilePicture} alt="" />
             </div>
-            <div className="user">
-              <h2 className="card-name">
+            <div className="service-profile-user">
+              <h2 className="service-profile-card-name">
                 {data.name} <MdVerified />
               </h2>
-              <p className="card-profession">{data.profession}</p>
+              <p className="service-profile-card-profession">{data.profession}</p>
             </div>
-            <div className="review">
-              <div className="rating">{data.rating}</div>
-              <div className="line"></div>
-              <div className="based">
+            <div className="service-profile-review">
+              <div className="service-profile-rating">{data.rating}</div>
+              <div className="service-profile-line"></div>
+              <div className="service-profile-based">
                 <StarRating rating={data.star} />
-                <div className="review-number">
+                <div className="service-profile-review-number">
                   Based on {data.reviews} Reviews
                 </div>
               </div>
             </div>
-            <div className="posted">Posted on {data.postedDate}</div>
+            <div className="service-profile-posted">Posted on {data.postedDate}</div>
           </div>
-          <div className="experience">
-            <div className="content">
-              <div className="about">
+          <div className="service-profile-experience">
+            <div className="service-profile-content">
+              <div className="service-profile-about">
                 <h3>About:</h3>
                 <p>{data.about}</p>
               </div>
               <br />
-              <div className="work-experience">
+              <div className="service-profile-work-experience">
                 <h3>Experience: {data.experience}</h3>
               </div>
               <br />
-              <div className="special">
-                <div className="location">
+              <div className="service-profile-special">
+                <div className="service-profile-location">
                   <h3>Location:</h3>
                   <p>{data.location}</p>
                 </div>
                 <br />
-                <div className="servicesoffered">
+                <div className="service-profile-servicesoffered">
                   <h3>Services Offered:</h3>
                   <p>{data.servicesoffered}</p>
                 </div>
               </div>
               <br />
-              <div className="working-hours">
+              <div className="service-profile-working-hours">
                 <h3>Available Days:</h3>
-                <div className="box-plot">
+                <div className="service-profile-box-plot">
                   <div
-                    className={`day ${
+                    className={`service-profile-day ${
                       data.availableDays
                         .map((d) => d.toLowerCase())
                         .includes("sunday")
-                        ? "available"
+                        ? "service-profile-available"
                         : ""
                     }`}
                   >
                     Sun
                   </div>
                   <div
-                    className={`day ${
+                    className={`service-profile-day ${
                       data.availableDays
                         .map((d) => d.toLowerCase())
                         .includes("monday")
-                        ? "available"
+                        ? "service-profile-available"
                         : ""
                     }`}
                   >
                     Mon
                   </div>
                   <div
-                    className={`day ${
+                    className={`service-profile-day ${
                       data.availableDays
                         .map((d) => d.toLowerCase())
                         .includes("tuesday")
-                        ? "available"
+                        ? "service-profile-available"
                         : ""
                     }`}
                   >
                     Tue
                   </div>
                   <div
-                    className={`day ${
+                    className={`service-profile-day ${
                       data.availableDays
                         .map((d) => d.toLowerCase())
                         .includes("wednesday")
-                        ? "available"
+                        ? "service-profile-available"
                         : ""
                     }`}
                   >
                     Wed
                   </div>
                   <div
-                    className={`day ${
+                    className={`service-profile-day ${
                       data.availableDays
                         .map((d) => d.toLowerCase())
                         .includes("thursday")
-                        ? "available"
+                        ? "service-profile-available"
                         : ""
                     }`}
                   >
                     Thu
                   </div>
                   <div
-                    className={`day ${
+                    className={`service-profile-day ${
                       data.availableDays
                         .map((d) => d.toLowerCase())
                         .includes("friday")
-                        ? "available"
+                        ? "service-profile-available"
                         : ""
                     }`}
                   >
                     Fri
                   </div>
                   <div
-                    className={`day ${
+                    className={`service-profile-day ${
                       data.availableDays
                         .map((d) => d.toLowerCase())
                         .includes("saturday")
-                        ? "available"
+                        ? "service-profile-available"
                         : ""
                     }`}
                   >
@@ -180,19 +180,19 @@ const Profile = () => {
                 </div>
               </div>
               <br />
-              <div className="special2">
-                <div className="call">
-                  <div className="callsym">
+              <div className="service-profile-special2">
+                <div className="service-profile-call">
+                  <div className="service-profile-callsym">
                     <FaPhone />
                   </div>
                   <p>Call</p>
                 </div>
-                <dic className="price">
-                  <div className="pricesym">
+                <div className="service-profile-price">
+                  <div className="service-profile-pricesym">
                     <IoIosPricetags />
                   </div>
                   <p>{data.price}</p>
-                </dic>
+                </div>
               </div>
             </div>
           </div>
